@@ -3,7 +3,7 @@
 //1) Realiza la suma, resta, multiplicación y división de dos números ingresados por el usuario. 
 class operaciones
 {
-    static void Main()
+    static void Main() 
     {
         Console.WriteLine("Ingrese el primer número:");
         double n1 = Convert.ToDouble(Console.ReadLine());
