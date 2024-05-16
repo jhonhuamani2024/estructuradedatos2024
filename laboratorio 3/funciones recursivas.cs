@@ -1,6 +1,5 @@
-﻿
-//Recursividad:
-//1) Ejercicio 1: Escribe una función recursiva que imprima los números pares del 1 al 100.
+﻿////Recursividad:
+////1) Ejercicio 1: Escribe una función recursiva que imprima los números pares del 1 al 100.
 //class Pares
 //{
 //    static void Main(string[] args)
@@ -20,7 +19,7 @@
 //    }
 //}
 
-//2) Ejercicio 2: Escribe una función recursiva que imprima la suma de los números del 1 al n.
+////2) Ejercicio 2: Escribe una función recursiva que imprima la suma de los números del 1 al n.
 //class suma
 //{
 //    static void Main(string[] args)
@@ -43,7 +42,7 @@
 //}
 
 
-//3) Ejercicio 3: Escribe una función recursiva que imprima la pirámide de números del 1 al n.
+////3) Ejercicio 3: Escribe una función recursiva que imprima la pirámide de números del 1 al n.
 //class priramide
 //{
 //    static void Main(string[] args)
@@ -66,30 +65,30 @@
 //}
 
 //4) Ejercicio 4: Escribe una función recursiva que imprima la pirámide de números invertidos del 1 al n.
-//class invertido
-//{
-//    static void Main(string[] args)
-//    {
-//        int n = 5; // Puedes cambiar el valor de n según tus necesidades
-//        PrintInvertedPyramid(n, n);
-//    }
+class invertido
+{
+    static void Main(string[] args)
+    {
+        int n = 5; // Puedes cambiar el valor de n según tus necesidades
+        PrintInvertedPyramid(n, n);
+    }
 
-//    static void PrintInvertedPyramid(int current, int n)
-//    {
-//        if (current == 0)
-//            return;
+    static void PrintInvertedPyramid(int current, int n)
+    {
+        if (current == 0)
+            return;
 
-//        PrintRow(n - current + 1, current);
-//        PrintInvertedPyramid(current - 1, n);
-//    }
+        PrintRow(n - current + 1, current);
+        PrintInvertedPyramid(current - 1, n);
+    }
 
-//    static void PrintRow(int start, int end)
-//    {
-//        if (start > end)
-//            return;
+    static void PrintRow(int start, int end)
+    {
+        if (start > end)
+            return;
 
-//        Console.Write($"{end - start + 1} ");
-//        PrintRow(start + 1, end);
-//    }
-//}
+        Console.Write($"{end - start + 1} ");
+        PrintRow(start + 1, end);
+    }
+}
 
